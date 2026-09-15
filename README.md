@@ -14,10 +14,10 @@ O objetivo deste sistema é informatizar a gestão acadêmica de uma universidad
 * **Semestre:** 2º Semestre / 2026
 
 ### 👥 Equipe de Desenvolvimento
-* Arthur Martins
-* Felipe Costa
+* Arthur Martins Candido    
+* Felipe Costa Lisboa
 * Gustavo Leonardi Ribeiro de Almeida
-* Sofia Fernandes
+* Sofia Fernandes Ferreira Silva
 
 ### 🚀 Status do Projeto: Sprint 01 (Lab01S01)
 Fase atual de levantamento de requisitos e modelagem de análise. 
