@@ -1,7 +1,29 @@
-# Sistema de Matrículas
+# 🎓 Sistema de Matrículas
 
-Projeto da disciplina **Projeto de Software** — PUC Minas, Engenharia de Software.
-Laboratório 1 — Lab01S01: Diagrama de Caso de Uso + Histórias de Usuário.
+Repositório dedicado ao desenvolvimento do **Sistema de Matrículas**, projeto prático estruturado para a disciplina de **Projeto de Software** da **PUC Minas**.
+
+O objetivo deste sistema é informatizar a gestão acadêmica de uma universidade, contemplando a oferta de disciplinas pela secretaria, o processo de matrícula dos alunos, o acompanhamento pelos professores e a notificação para o sistema de cobranças.
+
+---
+
+### 📚 Informações Acadêmicas
+* **Instituição:** Pontifícia Universidade Católica de Minas Gerais (PUC Minas)
+* **Curso:** Engenharia de Software
+* **Disciplina:** Projeto de Software
+* **Professora:** Milena Menezes Adão
+* **Semestre:** 2º Semestre / 2026
+
+### 👥 Equipe de Desenvolvimento
+* Arthur Martins
+* Felipe Costa
+* Gustavo Leonardi Ribeiro de Almeida
+* Sofia Fernandes
+
+### 🚀 Status do Projeto: Sprint 01 (Lab01S01)
+Fase atual de levantamento de requisitos e modelagem de análise. 
+**Entregas desta etapa:**
+- [x] Diagrama de Casos de Uso (UML).
+- [x] Histórias de Usuário (User Stories).
 
 ## 1. Descrição do Sistema
 
