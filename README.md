@@ -74,4 +74,4 @@ disciplinas. Todo usuário possui login e senha.
 ### Regras de Negócio Automáticas (Sistema)
 
 - **US15** — Como sistema, quero cancelar automaticamente disciplinas com menos de 3 alunos matriculados ao final do período de matrículas, para não manter turmas inviáveis.
-- **US16** — Como sistema, quero encerrar automaticamente as inscrições de uma disciplina ao atingir 60 alunos matriculados, para respeitar o limite máximo de vagas.
+- **US16** — Como sistema, quero encerrar automaticamente as inscrições de uma disciplina ao atingir 60 alunos matriculados, para respeitar o limite máximo de vagas. 
