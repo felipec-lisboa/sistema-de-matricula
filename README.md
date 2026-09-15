@@ -45,6 +45,7 @@ disciplinas. Todo usuário possui login e senha.
 
 - `«include»`: Matricular, Cancelar Matrícula e Consultar Alunos sempre exigem Login; Matricular sempre notifica o Sistema de Cobranças.
 - `«extend»`: ao matricular, se a disciplina atingir 60 alunos, as inscrições são encerradas; ao encerrar o período de matrículas, disciplinas sem o mínimo de 3 alunos são canceladas.
+- **Manter Curso/Disciplina/Professor/Aluno**: cada caso de uso representa o CRUD completo (cadastrar, consultar, editar e remover) da respectiva entidade, não apenas o cadastro inicial.
 
 ## 3. Histórias de Usuário
 
@@ -65,9 +66,9 @@ disciplinas. Todo usuário possui login e senha.
 ### Secretaria
 
 - **US09** — Como secretária, quero fazer login no sistema, para gerenciar cursos, disciplinas, professores e alunos.
-- **US10** — Como secretária, quero cadastrar cursos com nome e número de créditos, para organizar a oferta acadêmica.
-- **US11** — Como secretária, quero cadastrar disciplinas associadas a um curso, para compor o currículo de cada semestre.
-- **US12** — Como secretária, quero cadastrar professores e alunos, para que possam fazer login no sistema.
+- **US10** — Como secretária, quero manter cursos (cadastrar, consultar, editar e remover), com nome e número de créditos, para organizar a oferta acadêmica.
+- **US11** — Como secretária, quero manter disciplinas (cadastrar, consultar, editar e remover) associadas a um curso, para compor o currículo de cada semestre.
+- **US12** — Como secretária, quero manter professores e alunos (cadastrar, consultar, editar e remover), para que possam fazer login no sistema.
 - **US13** — Como secretária, quero gerar o currículo de cada semestre, para disponibilizar as disciplinas que os alunos podem cursar.
 - **US14** — Como secretária, quero abrir e encerrar o período de matrículas, para controlar quando os alunos podem se matricular ou cancelar.
 
