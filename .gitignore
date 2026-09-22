@@ -1,0 +1,58 @@
+# =========================
+# Java
+# =========================
+
+# Arquivos compilados
+*.class
+
+# Pacotes Java
+*.jar
+*.war
+*.ear
+
+# Diretórios de compilação
+bin/
+build/
+out/
+target/
+
+# =========================
+# VS Code
+# =========================
+
+.vscode/
+
+# =========================
+# IntelliJ IDEA
+# =========================
+
+.idea/
+*.iml
+
+# =========================
+# Eclipse
+# =========================
+
+.classpath
+.project
+.settings/
+
+# =========================
+# Sistema Operacional
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# =========================
+# Arquivos temporários
+# =========================
+
+*.log
+*.tmp
+*.temp
+*~
