@@ -40,9 +40,9 @@ Fase atual de **modelagem estrutural e criação da estrutura inicial do projeto
 
 * [x] Revisão dos diagramas desenvolvidos
 * [x] Diagrama de Classes (UML)
-* [ ] Criação do projeto Java
-* [ ] Criação das classes e atributos modelados
-* [ ] Criação dos stubs dos métodos modelados
+* [x] Criação do projeto Java
+* [x] Criação das classes e atributos modelados
+* [x] Criação dos stubs dos métodos modelados
 
 ---
 
