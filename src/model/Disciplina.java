@@ -10,6 +10,7 @@ public class Disciplina {
     private TipoDisciplina tipo;
     private StatusDisciplina status;
     private Professor professor;
+    private Curso curso;
     private List<Matricula> matriculas;
 
     public Disciplina(String codigo, String nome, TipoDisciplina tipo, StatusDisciplina status, Professor professor) {
@@ -25,11 +26,10 @@ public class Disciplina {
         return contarMatriculasAtivas() < 60;
     }
 
-    
     public boolean verificarMinimoAlunos() {
         return contarMatriculasAtivas() >= 3;
     }
-    
+
     public int contarMatriculasAtivas() {
         int quantidade = 0;
 
@@ -41,7 +41,7 @@ public class Disciplina {
 
         return quantidade;
     }
-    
+
     public List<Aluno> consultarAlunos() {
         List<Aluno> alunos = new ArrayList<>();
 
@@ -102,5 +102,21 @@ public class Disciplina {
 
     public void setProfessor(Professor professor) {
         this.professor = professor;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public List<Matricula> getMatriculas() {
+        return matriculas;
+    }
+
+    public void setMatriculas(List<Matricula> matriculas) {
+        this.matriculas = matriculas;
     }
 }

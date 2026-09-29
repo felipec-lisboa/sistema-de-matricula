@@ -13,10 +13,6 @@ public class GerenciadorArquivos {
 
     private static final String PASTA_DATA = "data";
 
-    // ==================================================
-    // INICIALIZAÇÃO
-    // ==================================================
-
     public static void inicializarArquivos() {
 
         try {
@@ -52,10 +48,6 @@ public class GerenciadorArquivos {
             Files.createFile(caminho);
         }
     }
-
-    // ==================================================
-    // OPERAÇÕES GENÉRICAS
-    // ==================================================
 
     public static void sobrescreverArquivo(
             String nomeArquivo,
@@ -109,10 +101,6 @@ public class GerenciadorArquivos {
             return new ArrayList<>();
         }
     }
-
-    // ==================================================
-    // USUÁRIOS
-    // ==================================================
 
     public static void salvarUsuarios(
             List<Usuario> usuarios) {
@@ -217,10 +205,6 @@ public class GerenciadorArquivos {
         return usuarios;
     }
 
-    // ==================================================
-    // CURSOS
-    // ==================================================
-
     public static void salvarCursos(
             List<Curso> cursos) {
 
@@ -272,10 +256,6 @@ public class GerenciadorArquivos {
 
         return cursos;
     }
-
-    // ==================================================
-    // DISCIPLINAS
-    // ==================================================
 
     public static void salvarDisciplinas(
             List<Disciplina> disciplinas) {
@@ -370,10 +350,6 @@ public class GerenciadorArquivos {
         return disciplinas;
     }
 
-    // ==================================================
-    // CURRÍCULO
-    // ==================================================
-
     public static void salvarCurriculo(
             Curriculo curriculo) {
 
@@ -441,10 +417,6 @@ public class GerenciadorArquivos {
 
         return curriculo;
     }
-
-    // ==================================================
-    // MATRÍCULAS
-    // ==================================================
 
     public static void salvarMatriculas(
             List<Usuario> usuarios) {
@@ -527,10 +499,6 @@ public class GerenciadorArquivos {
         }
     }
 
-    // ==================================================
-    // SALVAR TUDO
-    // ==================================================
-
     public static void salvarTudo(
             List<Usuario> usuarios,
             Secretaria secretaria,
@@ -551,10 +519,6 @@ public class GerenciadorArquivos {
 
         salvarCurriculo(curriculo);
     }
-
-    // ==================================================
-    // BUSCAS AUXILIARES
-    // ==================================================
 
     private static Professor buscarProfessor(
             List<Usuario> usuarios,
