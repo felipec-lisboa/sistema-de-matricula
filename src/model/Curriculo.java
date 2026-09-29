@@ -16,23 +16,43 @@ public class Curriculo {
     }
 
     public void adicionarDisciplina(Disciplina disciplina) {
-        // TODO: implementar na Sprint 3
+        if (!disciplinas.contains(disciplina)) {
+            disciplinas.add(disciplina);
+        }
     }
 
     public void removerDisciplina(Disciplina disciplina) {
-        // TODO: implementar na Sprint 3
+        disciplinas.remove(disciplina);
     }
 
     public void abrirMatriculas() {
-        // TODO: implementar na Sprint 3
+        periodoMatriculaAberto = true;
+
+        for (Disciplina disciplina : disciplinas) {
+            if (disciplina.getStatus() != StatusDisciplina.CANCELADA) {
+                disciplina.setStatus(StatusDisciplina.ABERTA);
+            }
+        }
     }
 
     public void encerrarMatriculas() {
-        // TODO: implementar na Sprint 3
+        periodoMatriculaAberto = false;
+        verificarDisciplinas();
     }
 
     public void verificarDisciplinas() {
-        // TODO: implementar na Sprint 3
+        for (Disciplina disciplina : disciplinas) {
+
+            if (disciplina.verificarMinimoAlunos()) {
+                disciplina.setStatus(StatusDisciplina.ATIVA);
+            } else {
+                disciplina.setStatus(StatusDisciplina.CANCELADA);
+            }
+        }
+    }
+
+    public boolean isPeriodoMatriculaAberto() {
+        return periodoMatriculaAberto;
     }
 
     public String getSemestre() {
@@ -43,19 +63,15 @@ public class Curriculo {
         this.semestre = semestre;
     }
 
-    public boolean isPeriodoMatriculaAberto() {
-        return periodoMatriculaAberto;
-    }
-
-    public void setPeriodoMatriculaAberto(boolean periodoMatriculaAberto) {
-        this.periodoMatriculaAberto = periodoMatriculaAberto;
-    }
-
     public List<Disciplina> getDisciplinas() {
         return disciplinas;
     }
 
     public void setDisciplinas(List<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
+    }
+
+    public void setPeriodoMatriculaAberto(boolean periodoMatriculaAberto) {
+        this.periodoMatriculaAberto = periodoMatriculaAberto;
     }
 }
