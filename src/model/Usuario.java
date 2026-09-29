@@ -6,17 +6,17 @@ public abstract class Usuario {
     private String login;
     private String senha;
 
-    public Usuario(String nome, String login, String senha){
+    public Usuario(String nome, String login, String senha) {
         this.nome = nome;
         this.login = login;
         this.senha = senha;
     }
 
-    public boolean autenticar(String login, String senha){
-        //TODO
+    public boolean autenticar(String login, String senha) {
+        return this.login.equals(login) && this.senha.equals(senha);
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
