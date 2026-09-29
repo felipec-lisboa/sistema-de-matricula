@@ -1,0 +1,3 @@
+SECRETARIA;Secretaria;secretaria;123;S001
+PROFESSOR;Professor Teste;professor;123;P001
+ALUNO;Aluno Teste;aluno;123;A001
