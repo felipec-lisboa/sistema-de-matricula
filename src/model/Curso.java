@@ -16,11 +16,13 @@ public class Curso {
     }
 
     public void adicionarDisciplina(Disciplina disciplina) {
-        // TODO: implementar na Sprint 3
+        if(!disciplinas.contains(disciplina)) {
+            disciplinas.add(disciplina);
+        }
     }
 
     public void removerDisciplina(Disciplina disciplina) {
-        // TODO: implementar na Sprint 3
+        disciplinas.remove(disciplina);
     }
 
     public List<Disciplina> consultarDisciplinas() {
