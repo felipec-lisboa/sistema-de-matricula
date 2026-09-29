@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Professor extends Usuario {
@@ -12,7 +13,12 @@ public class Professor extends Usuario {
     }
 
     public List<Aluno> consultarAlunos(Disciplina disciplina) {
-        return null;
+
+        if (disciplina.getProfessor() != this) {
+            return new ArrayList<>();
+        }
+
+        return disciplina.consultarAlunos();
     }
 
     public String getRegistro() {
