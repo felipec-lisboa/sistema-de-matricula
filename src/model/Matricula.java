@@ -13,12 +13,27 @@ public class Matricula {
     }
 
     public boolean realizar() {
-        return false;
+        if(ativa) return false;
+
+        if(!disciplina.possuiVaga()) return false;
+
+        ativa = true;
+        disciplina.adicionarMatricula(this);
+
+        return  true;
     }
 
     public boolean cancelar() {
-        return false;
-    }
+        if(!ativa) return false;
+
+        ativa = false;
+
+        if(disciplina.getStatus() == StatusDisciplina.LOTADA) {
+            disciplina.setStatus(StatusDisciplina.ABERTA);
+        }
+
+        return true;
+     }
 
     public Aluno getAluno() {
         return aluno;
