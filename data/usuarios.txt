@@ -1,3 +1,6 @@
 SECRETARIA;Secretaria;secretaria;123;S001
-PROFESSOR;Professor Teste;professor;123;P001
-ALUNO;Aluno Teste;aluno;123;A001
+PROFESSOR;Carlos Silva;professor;123;P001
+PROFESSOR;Mariana Souza;mariana;123;P002
+ALUNO;Joao Santos;aluno;123;A001
+ALUNO;Ana Oliveira;ana;123;A002
+ALUNO;Lucas Ferreira;lucas;123;A003

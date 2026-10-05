@@ -1,4 +1,0 @@
-ES001;Projeto de Software;OBRIGATORIA;ABERTA;P001;Engenharia de Software
-ES002;Banco de Dados;OBRIGATORIA;ABERTA;P002;Engenharia de Software
-ES003;Desenvolvimento Web;OPTATIVA;ABERTA;P001;Engenharia de Software
-CC001;Algoritmos em Grafos;OBRIGATORIA;ABERTA;P002;Ciencia da Computacao
