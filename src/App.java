@@ -253,56 +253,45 @@ public class App {
         // MENU ALUNO
         // ==================================================
 
-        private static void menuAluno(
-                        Aluno aluno) {
+        private static void menuAluno(Aluno aluno) {
 
                 boolean logado = true;
 
                 while (logado) {
 
-                        System.out.println(
-                                        "\n===== MENU ALUNO =====");
-                        System.out.println(
-                                        "1 - Visualizar disciplinas");
-                        System.out.println(
-                                        "2 - Realizar matrícula");
-                        System.out.println(
-                                        "3 - Cancelar matrícula");
-                        System.out.println(
-                                        "4 - Minhas disciplinas");
-                        System.out.println(
-                                        "0 - Logout");
-
+                        System.out.println("\n===== MENU ALUNO =====");
+                        System.out.println("1 - Visualizar disciplinas");
+                        System.out.println("2 - Realizar matrícula");
+                        System.out.println("3 - Cancelar matrícula");
+                        System.out.println("4 - Minhas disciplinas");
+                        System.out.println("0 - Logout");
                         System.out.print("Escolha: ");
 
                         String opcao = scanner.nextLine();
 
                         switch (opcao) {
-
                                 case "1":
                                         listarDisciplinas();
                                         break;
-
                                 case "2":
                                         realizarMatricula(aluno);
                                         break;
-
                                 case "3":
                                         cancelarMatricula(aluno);
                                         break;
-
                                 case "4":
-                                        listarDisciplinasAluno(
-                                                        aluno);
+                                        listarDisciplinasAluno(aluno);
                                         break;
-
                                 case "0":
                                         logado = false;
                                         break;
-
                                 default:
-                                        System.out.println(
-                                                        "Opção inválida.");
+                                        System.out.println("Opção inválida.");
+                                        break;
+                        }
+
+                        if (logado) {
+                                aguardarEnter();
                         }
                 }
         }
@@ -311,38 +300,33 @@ public class App {
         // MENU PROFESSOR
         // ==================================================
 
-        private static void menuProfessor(
-                        Professor professor) {
+        private static void menuProfessor(Professor professor) {
 
                 boolean logado = true;
 
                 while (logado) {
 
-                        System.out.println(
-                                        "\n===== MENU PROFESSOR =====");
-                        System.out.println(
-                                        "1 - Consultar alunos");
-                        System.out.println(
-                                        "0 - Logout");
-
+                        System.out.println("\n===== MENU PROFESSOR =====");
+                        System.out.println("1 - Consultar alunos");
+                        System.out.println("0 - Logout");
                         System.out.print("Escolha: ");
 
                         String opcao = scanner.nextLine();
 
                         switch (opcao) {
-
                                 case "1":
-                                        consultarAlunosProfessor(
-                                                        professor);
+                                        consultarAlunosProfessor(professor);
                                         break;
-
                                 case "0":
                                         logado = false;
                                         break;
-
                                 default:
-                                        System.out.println(
-                                                        "Opção inválida.");
+                                        System.out.println("Opção inválida.");
+                                        break;
+                        }
+
+                        if (logado) {
+                                aguardarEnter();
                         }
                 }
         }
@@ -351,12 +335,12 @@ public class App {
         // MENU SECRETARIA
         // ==================================================
 
-        private static void menuSecretaria(
-                        Secretaria secretaria) {
+        private static void menuSecretaria(Secretaria secretaria) {
 
                 boolean logado = true;
 
                 while (logado) {
+
                         System.out.println("\n===== MENU SECRETARIA =====");
                         System.out.println("1 - Cadastrar aluno");
                         System.out.println("2 - Editar aluno");
@@ -467,6 +451,11 @@ public class App {
                                         break;
                                 default:
                                         System.out.println("Opção inválida.");
+                                        break;
+                        }
+
+                        if (logado) {
+                                aguardarEnter();
                         }
                 }
         }
@@ -1395,6 +1384,11 @@ public class App {
                         if (curso.getNome().equalsIgnoreCase(nome))
                                 return curso;
                 return null;
+        }
+
+        private static void aguardarEnter() {
+                System.out.println("\nPressione Enter para voltar ao menu...");
+                scanner.nextLine();
         }
 
 }

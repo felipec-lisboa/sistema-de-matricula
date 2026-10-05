@@ -1,5 +1,5 @@
 A001;ES001;true
-A002;ES001;true
-A003;ES001;true
 A001;ES002;true
+A002;ES001;true
 A002;ES002;true
+A003;ES001;true
